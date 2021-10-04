@@ -1,0 +1,67 @@
+#body{
+    background-color: black;
+    display: flex;
+    justify-content: center;
+}
+#backgroundWindow{
+    background-color: white;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height:800px;
+    width: 400px;
+}
+#spacer{
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    width: 400px;
+    font-weight: bold;
+    font-size: 2em;
+}
+#container{
+    height: 300px;
+    width: 300px;
+    background-color: black;
+
+}
+#buttonContainer{
+    display:flex;
+    flex-direction:column-reverse;
+
+}
+#imageHolder{
+    height: 100%;
+    width: 100%;
+}
+#window {
+
+    width: 300px;   
+    height: 300px;
+    border: 1px solid;
+    overflow: hidden;
+    background-color: black;
+}
+
+#imageSlider {
+    display: flex;
+    transform: translateX(000px);
+    animation: move 20s infinite;
+}
+
+
+@keyframes move {
+    0% { transition: ease-in; transform: translateX(-100%); }
+    10% { transition: ease-in; transform: translateX(-200%); }
+    20% { transition: ease-in; transform: translateX(-300%); }
+    30% { transition: ease-in; transform: translateX(-400%); }
+    40% { transition: ease-in; transform: translateX(-500%); }
+    50% { transition: ease-in; transform: translateX(-600%); }
+    60% { transition: ease-in; transform: translateX(-500%); }
+    70% { transition: ease-in; transform: translateX(-400%); }
+    80% { transition: ease-in; transform: translateX(-300%); }
+    90% { transition: ease-in; transform: translateX(-200%); }
+    100% { transition: ease-in; transform: translateX(-100%); }
+}
